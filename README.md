@@ -74,7 +74,7 @@ jupyter notebook
 4. Сделайте предсказания
 
 ### Команда
-* **Data Scientist**: [Имя Фамилия]
+* **Data Scientist**: Тюляков Александр
 * **ML Engineer**: [Имя Фамилия]
 * **Product Manager**: [Имя Фамилия]
 
@@ -83,6 +83,6 @@ jupyter notebook
 
 ### Контакты
 Для вопросов и предложений обращайтесь:
-* Email: your.email@example.com
+* Email: 244447@edu.fa.ru
 * GitHub: @yourusername
 * LinkedIn: linkedin.com/in/yourusername
