@@ -8,3 +8,5 @@
 [2025-05-12 19:35:39,909] INFO in _internal: 127.0.0.1 - - [12/May/2025 19:35:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 [2025-05-12 19:35:55,037] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
 [2025-05-12 19:35:55,044] INFO in _internal: 127.0.0.1 - - [12/May/2025 19:35:55] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 19:37:47,253] INFO in app: Requst data: {'area': '40', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-12 19:37:47,256] INFO in _internal: 127.0.0.1 - - [12/May/2025 19:37:47] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
