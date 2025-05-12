@@ -1,0 +1,10 @@
+[2025-05-12 19:35:19,375] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-12 19:35:19,385] INFO in _internal:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2025-05-12 19:35:19,572] INFO in _internal:  * Restarting with fsevents reloader
+[2025-05-12 19:35:20,038] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-12 19:35:20,042] WARNING in _internal:  * Debugger is active!
+[2025-05-12 19:35:20,228] INFO in _internal:  * Debugger PIN: 137-113-848
+[2025-05-12 19:35:39,811] INFO in _internal: 127.0.0.1 - - [12/May/2025 19:35:39] "[37mGET / HTTP/1.1[0m" 200 -
+[2025-05-12 19:35:39,909] INFO in _internal: 127.0.0.1 - - [12/May/2025 19:35:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-12 19:35:55,037] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-12 19:35:55,044] INFO in _internal: 127.0.0.1 - - [12/May/2025 19:35:55] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
