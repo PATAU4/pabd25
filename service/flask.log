@@ -10,3 +10,45 @@
 [2025-05-12 19:35:55,044] INFO in _internal: 127.0.0.1 - - [12/May/2025 19:35:55] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
 [2025-05-12 19:37:47,253] INFO in app: Requst data: {'area': '40', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
 [2025-05-12 19:37:47,256] INFO in _internal: 127.0.0.1 - - [12/May/2025 19:37:47] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 19:55:07,497] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-12 19:55:34,220] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-12 19:57:48,725] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-12 19:58:11,810] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-12 20:00:50,524] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-12 20:02:03,368] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-12 20:02:03,375] INFO in _internal:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2025-05-12 20:02:03,384] INFO in _internal:  * Restarting with fsevents reloader
+[2025-05-12 20:02:03,868] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-12 20:02:03,872] WARNING in _internal:  * Debugger is active!
+[2025-05-12 20:02:03,906] INFO in _internal:  * Debugger PIN: 137-113-848
+[2025-05-12 20:02:16,228] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:02:16] "[37mGET / HTTP/1.1[0m" 200 -
+[2025-05-12 20:02:28,746] INFO in app: Requst data: {'area': '23', 'rooms': '1', 'total_floors': '10', 'floor': '2'}
+[2025-05-12 20:02:28,751] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:02:28] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:09:33,235] INFO in app: Requst data: {'area': '23', 'rooms': '1', 'total_floors': '10', 'floor': '2'}
+[2025-05-12 20:09:33,239] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:09:33] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:09:33,891] INFO in app: Requst data: {'area': '23', 'rooms': '1', 'total_floors': '10', 'floor': '2'}
+[2025-05-12 20:09:33,893] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:09:33] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:09:40,310] INFO in app: Requst data: {'area': '10', 'rooms': '1', 'total_floors': '10', 'floor': '2'}
+[2025-05-12 20:09:40,311] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:09:40] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:09:42,759] INFO in app: Requst data: {'area': '1', 'rooms': '1', 'total_floors': '10', 'floor': '2'}
+[2025-05-12 20:09:42,761] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:09:42] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:09:45,460] INFO in app: Requst data: {'area': '-1', 'rooms': '1', 'total_floors': '10', 'floor': '2'}
+[2025-05-12 20:09:45,461] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:09:45] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:09:48,777] INFO in app: Requst data: {'area': '1', 'rooms': '1', 'total_floors': '10', 'floor': '2'}
+[2025-05-12 20:09:48,778] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:09:48] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:09:57,227] INFO in app: Requst data: {'area': '20', 'rooms': '1', 'total_floors': '10', 'floor': '2'}
+[2025-05-12 20:09:57,230] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:09:57] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:10:00,545] INFO in app: Requst data: {'area': '20', 'rooms': '1', 'total_floors': '1', 'floor': '2'}
+[2025-05-12 20:10:00,547] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:10:00] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:10:01,263] INFO in app: Requst data: {'area': '20', 'rooms': '1', 'total_floors': '1', 'floor': '2'}
+[2025-05-12 20:10:01,264] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:10:01] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:10:01,427] INFO in app: Requst data: {'area': '20', 'rooms': '1', 'total_floors': '1', 'floor': '2'}
+[2025-05-12 20:10:01,429] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:10:01] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:10:02,945] INFO in app: Requst data: {'area': '20', 'rooms': '1', 'total_floors': '1', 'floor': '1'}
+[2025-05-12 20:10:02,946] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:10:02] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:10:05,195] INFO in app: Requst data: {'area': '20', 'rooms': '1', 'total_floors': '1', 'floor': '10'}
+[2025-05-12 20:10:05,196] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:10:05] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:10:07,610] INFO in app: Requst data: {'area': '20', 'rooms': '1', 'total_floors': '100', 'floor': '10'}
+[2025-05-12 20:10:07,612] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:10:07] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:10:15,278] INFO in app: Requst data: {'area': '28', 'rooms': '1', 'total_floors': '20', 'floor': '4'}
+[2025-05-12 20:10:15,279] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:10:15] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
