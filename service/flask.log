@@ -121,3 +121,53 @@
 [2025-05-19 21:32:47,906] INFO in app: Use model: models/gradient_boost_v1.pkl
 [2025-05-19 21:32:47,912] WARNING in _internal:  * Debugger is active!
 [2025-05-19 21:32:47,927] INFO in _internal:  * Debugger PIN: 137-113-848
+[2025-05-19 21:38:13,518] INFO in app: Use model: models/gradient_boost_v1.pkl
+[2025-05-19 21:38:13,526] INFO in _internal:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2025-05-19 21:38:13,535] INFO in _internal:  * Restarting with fsevents reloader
+[2025-05-19 21:38:14,049] INFO in app: Use model: models/gradient_boost_v1.pkl
+[2025-05-19 21:38:14,053] WARNING in _internal:  * Debugger is active!
+[2025-05-19 21:38:14,070] INFO in _internal:  * Debugger PIN: 137-113-848
+[2025-05-19 21:38:24,518] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:24] "[37mGET / HTTP/1.1[0m" 200 -
+[2025-05-19 21:38:24,520] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-19 21:38:31,120] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-19 21:38:31,126] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:31] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:38:36,253] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '40', 'floor': '23'}
+[2025-05-19 21:38:36,256] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:36] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:38:37,290] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '40', 'floor': '23'}
+[2025-05-19 21:38:37,292] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:37] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:38:39,969] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '40', 'floor': '20'}
+[2025-05-19 21:38:39,971] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:39] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:38:40,389] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '40', 'floor': '20'}
+[2025-05-19 21:38:40,391] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:40] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:38:45,153] INFO in app: Requst data: {'area': '10', 'rooms': '1', 'total_floors': '40', 'floor': '20'}
+[2025-05-19 21:38:45,154] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:45] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:38:49,371] INFO in app: Requst data: {'area': '12', 'rooms': '1', 'total_floors': '40', 'floor': '20'}
+[2025-05-19 21:38:49,373] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:49] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:38:49,923] INFO in app: Requst data: {'area': '12', 'rooms': '1', 'total_floors': '40', 'floor': '20'}
+[2025-05-19 21:38:49,925] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:49] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:38:52,722] INFO in app: Requst data: {'area': '52', 'rooms': '1', 'total_floors': '40', 'floor': '20'}
+[2025-05-19 21:38:52,723] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:38:52] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:31,644] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-19 21:39:31,648] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:31] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:35,588] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '2'}
+[2025-05-19 21:39:35,589] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:35] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:37,573] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '2'}
+[2025-05-19 21:39:37,575] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:37] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:40,602] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '1'}
+[2025-05-19 21:39:40,606] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:40] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:43,121] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '35'}
+[2025-05-19 21:39:43,123] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:43] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:46,221] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-19 21:39:46,222] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:46] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:46,972] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-19 21:39:46,974] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:46] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:47,888] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-19 21:39:47,889] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:47] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:50,535] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '100', 'floor': '23'}
+[2025-05-19 21:39:50,537] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:50] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:54,237] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-19 21:39:54,239] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:54] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:39:59,769] INFO in app: Requst data: {'area': '70', 'rooms': '2', 'total_floors': '35', 'floor': '23'}
+[2025-05-19 21:39:59,771] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:39:59] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:40:04,888] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-19 21:40:04,891] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:40:04] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
