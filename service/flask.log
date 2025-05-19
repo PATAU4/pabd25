@@ -80,3 +80,44 @@
 [2025-05-19 19:25:37,896] WARNING in _internal:  * Debugger is active!
 [2025-05-19 19:25:37,919] INFO in _internal:  * Debugger PIN: 137-113-848
 [2025-05-19 19:25:45,267] INFO in _internal: 127.0.0.1 - - [19/May/2025 19:25:45] "[37mGET / HTTP/1.1[0m" 200 -
+[2025-05-19 21:30:26,026] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-19 21:30:26,038] INFO in _internal:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2025-05-19 21:30:26,047] INFO in _internal:  * Restarting with fsevents reloader
+[2025-05-19 21:30:26,540] INFO in app: Use model: models/linear_regression_v1.pkl
+[2025-05-19 21:30:26,544] WARNING in _internal:  * Debugger is active!
+[2025-05-19 21:30:26,574] INFO in _internal:  * Debugger PIN: 137-113-848
+[2025-05-19 21:30:34,867] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:30:34] "[37mGET / HTTP/1.1[0m" 200 -
+[2025-05-19 21:30:35,516] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:30:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-19 21:30:39,049] INFO in app: Requst data: {'area': '50', 'rooms': '', 'total_floors': '', 'floor': ''}
+[2025-05-19 21:30:39,051] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:30:39] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:30:40,302] INFO in app: Requst data: {'area': '50', 'rooms': '', 'total_floors': '', 'floor': ''}
+[2025-05-19 21:30:40,303] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:30:40] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:30:45,586] INFO in app: Requst data: {'area': '50', 'rooms': '1', 'total_floors': '10', 'floor': '3'}
+[2025-05-19 21:30:45,604] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:30:45] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:30:46,120] INFO in app: Requst data: {'area': '50', 'rooms': '1', 'total_floors': '10', 'floor': '3'}
+[2025-05-19 21:30:46,122] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:30:46] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:30:47,154] INFO in app: Requst data: {'area': '50', 'rooms': '1', 'total_floors': '10', 'floor': '3'}
+[2025-05-19 21:30:47,155] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:30:47] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:30:50,287] INFO in app: Requst data: {'area': '70', 'rooms': '1', 'total_floors': '10', 'floor': '3'}
+[2025-05-19 21:30:50,288] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:30:50] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:30:52,234] INFO in app: Requst data: {'area': '70', 'rooms': '2', 'total_floors': '10', 'floor': '3'}
+[2025-05-19 21:30:52,235] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:30:52] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:32:04,690] INFO in app: Use model: models/gradient_boost_v1.pkl
+[2025-05-19 21:32:04,698] INFO in _internal:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2025-05-19 21:32:04,707] INFO in _internal:  * Restarting with fsevents reloader
+[2025-05-19 21:32:05,221] INFO in app: Use model: models/gradient_boost_v1.pkl
+[2025-05-19 21:32:05,226] WARNING in _internal:  * Debugger is active!
+[2025-05-19 21:32:05,245] INFO in _internal:  * Debugger PIN: 137-113-848
+[2025-05-19 21:32:10,901] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:32:10] "[37mGET / HTTP/1.1[0m" 200 -
+[2025-05-19 21:32:10,907] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:32:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-19 21:32:20,690] INFO in app: Requst data: {'area': '45', 'rooms': '1', 'total_floors': '35', 'floor': '23'}
+[2025-05-19 21:32:20,695] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:32:20] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:32:35,071] INFO in app: Requst data: {'area': '65', 'rooms': '2', 'total_floors': '12', 'floor': '7'}
+[2025-05-19 21:32:35,075] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:32:35] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:32:38,584] INFO in app: Requst data: {'area': '65', 'rooms': '2', 'total_floors': '30', 'floor': '7'}
+[2025-05-19 21:32:38,585] INFO in _internal: 127.0.0.1 - - [19/May/2025 21:32:38] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-19 21:32:46,084] INFO in _internal:  * Detected change in '/Users/aleksandrtulakov/pabd25/pabd25/pabd25-1/service/app.py', reloading
+[2025-05-19 21:32:47,196] INFO in _internal:  * Restarting with fsevents reloader
+[2025-05-19 21:32:47,906] INFO in app: Use model: models/gradient_boost_v1.pkl
+[2025-05-19 21:32:47,912] WARNING in _internal:  * Debugger is active!
+[2025-05-19 21:32:47,927] INFO in _internal:  * Debugger PIN: 137-113-848

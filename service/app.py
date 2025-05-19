@@ -31,7 +31,7 @@ app = Flask(__name__)
 import joblib
 
 # Сохранение модели
-MODEL_NAME = "models/linear_regression_v1.pkl"
+MODEL_NAME = "models/gradient_boost_v1.pkl"
 
 
 # Маршрут для отображения формы
@@ -47,9 +47,18 @@ def process_numbers():
     data = request.get_json()
 
     app.logger.info(f"Requst data: {data}")
+    
+    
     try:
         area = float(data["area"])
-        price = app.config["model"].predict([[area]])[0]
+        rooms = int(data['rooms'])
+        total_floors = int(data['total_floors'])
+        floor = int(data['floor'])
+        
+        print(area, rooms, total_floors, floor)
+    
+                
+        price = app.config["model"].predict([[area, rooms, total_floors, floor]])[0]
         price = int(price)
     except ValueError:
         return {"status": "error", "data": "Ошибка парсинга данных"}
