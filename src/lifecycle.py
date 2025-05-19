@@ -137,11 +137,11 @@ def test_model(model_path):
     logging.info(f"Test model. R2 train: {r2_train:.2f}")
     logging.info(f"Test model. R2 test: {r2_test:.2f}")
     
-    pass
 
 
 if __name__ == "__main__":
     """Parse arguments and run lifecycle steps"""
+    # https://docs.python.org/3/library/argparse.html
     parser = argparse.ArgumentParser()
     
     parser.add_argument(
@@ -171,7 +171,8 @@ if __name__ == "__main__":
         "-p", 
         "--parse_data", 
         help="Flag to parse new data", 
-        action="store_true"
+        action="store_true",
+        default=False
     )
     
     args = parser.parse_args()
