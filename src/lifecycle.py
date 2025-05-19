@@ -137,6 +137,7 @@ def test_model(model_path):
     r2_train = model.score(X_train, y_train)
     r2_test = model.score(X_test, y_test)
 
+    logging.info(f"Random forest model metrics.")
     logging.info(f"Test model. MSE: {mse:.2f}")
     logging.info(f"Test model. RMSE: {rmse:.2f}")
     logging.info(f"Test model. MAE: {mae:.2f}")
