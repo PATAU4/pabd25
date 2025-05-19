@@ -16,7 +16,7 @@ from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 
 
 
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import BaggingRegressor
 
 
 import logging
@@ -25,7 +25,7 @@ import joblib
 
 N_ROOMS = 1
 TEST_SIZE = 0.2
-MODEL_NAME = "random_forest_v1.pkl"
+MODEL_NAME = "bagging_regressor_v1.pkl"
 
 
 # https://docs.python.org/3/library/logging.html
@@ -108,7 +108,7 @@ def train_model(model_path):
     train_df = pd.read_csv("data/processed/train.csv")
     X = train_df[["total_meters", "floor", "floors_count", "rooms_count"]]  # обучение по 4 признакам
     y = train_df["price"]
-    model = RandomForestRegressor(max_depth=12)
+    model = BaggingRegressor()
     model.fit(X, y)
 
     joblib.dump(model, model_path)
@@ -136,7 +136,8 @@ def test_model(model_path):
     mae = mean_absolute_error(y_test, y_pred)
     r2_train = model.score(X_train, y_train)
     r2_test = model.score(X_test, y_test)
-
+    
+    logging.info(f"Bagging model metrics.")
     logging.info(f"Test model. MSE: {mse:.2f}")
     logging.info(f"Test model. RMSE: {rmse:.2f}")
     logging.info(f"Test model. MAE: {mae:.2f}")
