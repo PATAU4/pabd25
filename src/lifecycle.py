@@ -20,7 +20,7 @@ import logging
 import joblib
 
 
-
+N_ROOMS = 1
 TEST_SIZE = 0.2
 MODEL_NAME = "linear_regression_v1.pkl"
 
