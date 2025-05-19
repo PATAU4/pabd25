@@ -141,14 +141,15 @@ def test_model(model_path):
 
 if __name__ == "__main__":
     """Parse arguments and run lifecycle steps"""
+    
     # https://docs.python.org/3/library/argparse.html
     parser = argparse.ArgumentParser()
     
     parser.add_argument(
         "-s",
-        "--split",
+        "--test_train_split",
         type=float,
-        help="Split data, test size, from 0 to 0.5",
+        help="Split data to test and train dataframes, test size, from 0 to 0.5",
         default=TEST_SIZE,
     )
     
@@ -177,10 +178,11 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
 
-    test_size = float(args.split)
+    test_size = float(args.test_train_split)
     assert 0.0 <= test_size <= 0.5
     model_path = os.path.join("models", args.model)
 
+    # parse_data по умолчанию False
     if args.parse_data:
         parse_cian(args.n_rooms)
         
