@@ -44,12 +44,16 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-### Модели машинного обучения
-* **Linear Regression** 
-* **Random forest** 
+### Модель машинного обучения
 * **Gradient Boosting** 
-* **Bagging** 
 
+### Данные
+Собраны в период с 16.04.2025 по 14.05.2025
+В выборке 1, 2, 3 комнатные квартиры
+Цена до 100 млн, площадь до 100 м2
+
+Train - 2580 квартир
+Test - 645 квартир
 
 ### Метрики оценки
 * **Mean Absolute Error (MAE)**
