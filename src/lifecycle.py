@@ -16,7 +16,7 @@ from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 
 
 
-from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.ensemble import RandomForestRegressor
 
 
 import logging
@@ -25,7 +25,7 @@ import joblib
 
 N_ROOMS = 1
 TEST_SIZE = 0.2
-MODEL_NAME = "gradient_boost_v1.pkl"
+MODEL_NAME = "random_forest_v1.pkl"
 
 
 # https://docs.python.org/3/library/logging.html
@@ -108,7 +108,7 @@ def train_model(model_path):
     train_df = pd.read_csv("data/processed/train.csv")
     X = train_df[["total_meters", "floor", "floors_count", "rooms_count"]]  # обучение по 4 признакам
     y = train_df["price"]
-    model = GradientBoostingRegressor()
+    model = RandomForestRegressor(max_depth=12)
     model.fit(X, y)
 
     joblib.dump(model, model_path)
