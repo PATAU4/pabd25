@@ -24,6 +24,9 @@ N_ROOMS = 1
 TEST_SIZE = 0.2
 MODEL_NAME = "linear_regression_v1.pkl"
 
+
+# https://docs.python.org/3/library/logging.html
+
 logging.basicConfig(
     filename="train.log",
     filemode="a",
@@ -55,6 +58,9 @@ def parse_cian(n_rooms=1):
     df.to_csv(csv_path,
               encoding='utf-8',
               index=False)
+    
+    
+    logging.info(f"Raw data parsed. Shape: {df.shape}")
 
 
 
@@ -64,7 +70,9 @@ def preprocess_data(test_size):
     """
     raw_data_path = "./data/raw"
     file_list = glob.glob(raw_data_path + "/*.csv")
+    
     logging.info(f"Preprocess_data. Use files to train: {file_list}")
+    
     main_df = pd.read_csv(file_list[0])
     for i in range(1, len(file_list)):
         data = pd.read_csv(file_list[i])
@@ -77,6 +85,8 @@ def preprocess_data(test_size):
     main_df.drop_duplicates(inplace=True)
     main_df = main_df[main_df["price"] < 100_000_000]
     main_df = main_df[main_df["total_meters"] < 100]
+    
+    
     train_df, test_df = train_test_split(main_df, test_size=test_size, shuffle=False)
 
     logging.info(f"Preprocess_data. train_df: {len(train_df)} samples")
