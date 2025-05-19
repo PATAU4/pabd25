@@ -12,9 +12,12 @@ import os
 import cianparser
 
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
+
+
+
+from sklearn.ensemble import GradientBoostingRegressor
+
 
 import logging
 import joblib
@@ -22,7 +25,7 @@ import joblib
 
 N_ROOMS = 1
 TEST_SIZE = 0.2
-MODEL_NAME = "linear_regression_v1.pkl"
+MODEL_NAME = "gradient_boost_v1.pkl"
 
 
 # https://docs.python.org/3/library/logging.html
@@ -80,7 +83,7 @@ def preprocess_data(test_size):
         main_df = pd.concat([main_df, df], axis=0)
 
     main_df["url_id"] = main_df["url"].map(lambda x: x.split("/")[-2])
-    main_df = main_df[["url_id", "total_meters", "price"]].set_index("url_id")
+    main_df = main_df[["url_id", "total_meters", "price", "floor", "floors_count", "rooms_count"]].set_index("url_id")
     main_df = main_df.sort_index()
     main_df.drop_duplicates(inplace=True)
     main_df = main_df[main_df["price"] < 100_000_000]
@@ -103,24 +106,25 @@ def preprocess_data(test_size):
 def train_model(model_path):
     """Train model and save with MODEL_NAME"""
     train_df = pd.read_csv("data/processed/train.csv")
-    X = train_df[["total_meters"]]  # площадь
+    X = train_df[["total_meters", "floor", "floors_count", "rooms_count"]]  # обучение по 4 признакам
     y = train_df["price"]
-    model = LinearRegression()
+    model = GradientBoostingRegressor()
     model.fit(X, y)
 
     joblib.dump(model, model_path)
 
-    logging.info(f"Train model. Total meters coef: {model.coef_[0]:.2f}")
-    logging.info(f"Train model. Bias: {model.intercept_:.2f}")
+    # logging.info(f"Train model. Total meters coef: {model.coef_[0]:.2f}")
+    # logging.info(f"Train model. Bias: {model.intercept_:.2f}")
 
 
 def test_model(model_path):
     """Test model with new data"""
     test_df = pd.read_csv("data/processed/test.csv")
     train_df = pd.read_csv("data/processed/train.csv")
-    X_test = test_df[["total_meters"]]
+    
+    X_test = test_df[["total_meters", "floor", "floors_count", "rooms_count"]]
     y_test = test_df["price"]
-    X_train = train_df[["total_meters"]]
+    X_train = train_df[["total_meters", "floor", "floors_count", "rooms_count"]]
     y_train = train_df["price"]
     model = joblib.load(model_path)
     # Предсказание на тестовой выборке
@@ -129,11 +133,13 @@ def test_model(model_path):
     # Оценка модели
     mse = mean_squared_error(y_test, y_pred)
     rmse = np.sqrt(mse)
+    mae = mean_absolute_error(y_test, y_pred)
     r2_train = model.score(X_train, y_train)
     r2_test = model.score(X_test, y_test)
 
     logging.info(f"Test model. MSE: {mse:.2f}")
     logging.info(f"Test model. RMSE: {rmse:.2f}")
+    logging.info(f"Test model. MAE: {mae:.2f}")
     logging.info(f"Test model. R2 train: {r2_train:.2f}")
     logging.info(f"Test model. R2 test: {r2_test:.2f}")
     
