@@ -28,7 +28,7 @@ MODEL_NAME = "linear_regression_v1.pkl"
 # https://docs.python.org/3/library/logging.html
 
 logging.basicConfig(
-    filename="train.log",
+    filename="./logs/train.log",
     filemode="a",
     format="%(asctime)s,%(msecs)03d %(name)s %(levelname)s %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
@@ -143,6 +143,7 @@ def test_model(model_path):
 if __name__ == "__main__":
     """Parse arguments and run lifecycle steps"""
     parser = argparse.ArgumentParser()
+    
     parser.add_argument(
         "-s",
         "--split",
@@ -150,13 +151,29 @@ if __name__ == "__main__":
         help="Split data, test size, from 0 to 0.5",
         default=TEST_SIZE,
     )
+    
     parser.add_argument(
-        "-n", "--n_rooms", help="Number of rooms to parse", type=int, default=N_ROOMS
+        "-n", 
+        "--n_rooms", 
+        help="Number of rooms to parse", 
+        type=int, 
+        default=N_ROOMS
     )
-    parser.add_argument("-m", "--model", help="Model name", default=MODEL_NAME)
+    
     parser.add_argument(
-        "-p", "--parse_data", help="Flag to parse new data", action="store_true"
+        "-m", 
+        "--model", 
+        help="Model name", 
+        default=MODEL_NAME
+        )
+    
+    parser.add_argument(
+        "-p", 
+        "--parse_data", 
+        help="Flag to parse new data", 
+        action="store_true"
     )
+    
     args = parser.parse_args()
 
     test_size = float(args.split)
@@ -165,6 +182,7 @@ if __name__ == "__main__":
 
     if args.parse_data:
         parse_cian(args.n_rooms)
+        
     preprocess_data(test_size)
     train_model(model_path)
     test_model(model_path)
