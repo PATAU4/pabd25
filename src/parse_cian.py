@@ -2,17 +2,16 @@
 https://github.com/lenarsaitov/cianparser
 """
 import datetime
-
 import cianparser
 import pandas as pd
 
 moscow_parser = cianparser.CianParser(location="Москва")
 
-
 def main():
     """
     Function docstring
     """
+
     t = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M")
     n_rooms = 1
     csv_path = f'data/raw/{n_rooms}_{t}.csv'
@@ -22,7 +21,7 @@ def main():
         with_saving_csv=False,
         additional_settings={
             "start_page": 1,
-            "end_page": 50,
+            "end_page": 2,
             "object_type": "secondary"
         })
     df = pd.DataFrame(data)

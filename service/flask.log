@@ -52,3 +52,6 @@
 [2025-05-12 20:10:07,612] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:10:07] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
 [2025-05-12 20:10:15,278] INFO in app: Requst data: {'area': '28', 'rooms': '1', 'total_floors': '20', 'floor': '4'}
 [2025-05-12 20:10:15,279] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:10:15] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:18:40,016] INFO in app: Requst data: {'area': '100', 'rooms': '1', 'total_floors': '20', 'floor': '4'}
+[2025-05-12 20:18:40,021] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:18:40] "[37mPOST /api/numbers HTTP/1.1[0m" 200 -
+[2025-05-12 20:20:24,045] INFO in _internal: 127.0.0.1 - - [12/May/2025 20:20:24] "[37mGET / HTTP/1.1[0m" 200 -
