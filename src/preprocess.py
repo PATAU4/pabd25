@@ -18,9 +18,9 @@ import logging
 import joblib
 
 
-N_ROOMS = 1
+
 TEST_SIZE = 0.2
-MODEL_NAME = "gradient_boost_v1.pkl"
+
 
 
 # https://docs.python.org/3/library/logging.html
@@ -64,8 +64,8 @@ def preprocess_data(test_size):
     test_head = "\n" + str(test_df.head())
     logging.info(test_head)
 
-    train_df.to_csv("data/processed/train.csv")
-    test_df.to_csv("data/processed/test.csv")
+    train_df.to_csv("data/processed_data/train.csv")
+    test_df.to_csv("data/processed_data/test.csv")
 
 if __name__ == "__main__":
     """Parse arguments and run lifecycle steps"""
@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
     test_size = float(args.test_train_split)
     assert 0.0 <= test_size <= 0.5
-    model_path = os.path.join("models", args.model)
+
         
     preprocess_data(test_size)
 
