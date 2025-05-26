@@ -40,8 +40,8 @@ logging.basicConfig(
 
 def test_model(model_path):
     """Test model with new data"""
-    test_df = pd.read_csv("data/processed/test.csv")
-    train_df = pd.read_csv("data/processed/train.csv")
+    test_df = pd.read_csv("data/processed_data/test.csv")
+    train_df = pd.read_csv("data/processed_data/train.csv")
     
     X_test = test_df[["total_meters", "floor", "floors_count", "rooms_count"]]
     y_test = test_df["price"]

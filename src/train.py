@@ -44,7 +44,7 @@ logging.basicConfig(
 
 def train_model(model_path):
     """Train model and save with MODEL_NAME"""
-    train_df = pd.read_csv("data/processed/train.csv")
+    train_df = pd.read_csv("data/processed_data/train.csv")
     X = train_df[["total_meters", "floor", "floors_count", "rooms_count"]]  # обучение по 4 признакам
     y = train_df["price"]
     model = GradientBoostingRegressor()
@@ -99,6 +99,6 @@ if __name__ == "__main__":
 
     test_size = float(args.test_train_split)
     assert 0.0 <= test_size <= 0.5
-    model_path = os.path.join("models", args.model)
+    model_path = os.path.join("saved_models", args.model)
 
     train_model(model_path)

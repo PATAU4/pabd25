@@ -1,0 +1,57 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python src/preprocess.py
+    deps:
+    - path: data/raw/
+      hash: md5
+      md5: ecf05216f864ff2993a0a998377400a2.dir
+      size: 821413
+      nfiles: 3
+    - path: src/preprocess.py
+      hash: md5
+      md5: b71c5197505d3e9abbb4f05e4db8113c
+      size: 2510
+    outs:
+    - path: data/processed_data/test.csv
+      hash: md5
+      md5: 6c5ff43a215d537e699df6ce1cee538a
+      size: 19934
+    - path: data/processed_data/train.csv
+      hash: md5
+      md5: 4dbdfe49f393cfe15e161711b0fe56dc
+      size: 79444
+  test:
+    cmd: python src/preprocess.py
+    deps:
+    - path: data/processed_data/
+      hash: md5
+      md5: fb53087e4c5a0b2de96d2e61c571bf1b.dir
+      size: 99378
+      nfiles: 2
+    - path: src/test.py
+      hash: md5
+      md5: 5727b9cf8c6305252d90fe40bf1719e3
+      size: 2873
+    outs:
+    - path: ./logs/train.log
+      hash: md5
+      md5: 4edc4c66678e5923c79180d44dbdbe4e
+      size: 1312
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/processed_data/
+      hash: md5
+      md5: fb53087e4c5a0b2de96d2e61c571bf1b.dir
+      size: 99378
+      nfiles: 2
+    - path: src/train.py
+      hash: md5
+      md5: 4d4dffbf89300e9ce73a7ceb52c051b8
+      size: 2308
+    outs:
+    - path: saved_models/gradient_boost_v1.pkl
+      hash: md5
+      md5: 07819fd87c7f09b185c26230d4ea5c59
+      size: 170075

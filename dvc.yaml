@@ -5,4 +5,19 @@ stages:
     - data/raw/
     - src/preprocess.py
     outs:
-    - data/processed_data
+    - data/processed_data/test.csv
+    - data/processed_data/train.csv
+  test:
+    cmd: python src/preprocess.py
+    deps:
+    - data/processed_data/
+    - src/test.py
+    outs:
+    - ./logs/train.log
+  train:
+    cmd: python src/train.py
+    deps:
+    - data/processed_data/
+    - src/train.py
+    outs:
+    - saved_models/gradient_boost_v1.pkl
