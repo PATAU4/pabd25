@@ -28,6 +28,21 @@ dictConfig(
 
 app = Flask(__name__)
 
+from flask_cors import CORS
+cors = CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})
+
+import dotenv
+config = dotenv.dotenv_values('.env')
+
+from flask_httpauth import HTTPTokenAuth
+auth = HTTPTokenAuth(scheme='Bearer')
+tokens = { config['APP_TOKEN']: "user1", }
+
+@auth.verify_token
+def verify_token(token):
+    if token in tokens:
+        return tokens[token]
+
 import joblib
 
 # Сохранение модели

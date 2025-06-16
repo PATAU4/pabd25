@@ -4,3 +4,9 @@ matplotlib
 numpy
 scikit-learn
 joblib
+flask
+flask-cors
+flask-httpauth
+gunicorn
+boto3
+python-dotenv
